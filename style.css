@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/3409297.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* font-family: 'jost' , sans-serif; */
+    font-family: 'Jost', sans-serif;
+}
+
+.main{
+    width: 350px;
+    height: 500px;
+    background: red;
+    overflow: hidden;
+    background: url(./images/sign-up.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+}
+
+#check{
+    display: none;
+}
+
+.sign-up{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+label{
+    color: #fff;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 5s ease-in-out;
+}
+
+input{
+    padding: 20px;
+    width: 70%;
+    height: 20px;
+    margin: 20px auto;
+    background: #e0dede;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border-radius: 5px;
+}
+
+button{
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    background: #573b8a;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+button:hover{
+background:#6d44b8;
+}
+
+.login{
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+
+.login label{
+    color: #573b8a;
+    transform: scale(.6);
+}
+
+#check:checked ~.login{
+    transform: translateY(-500px);
+}
+
+#check:checked ~.login label{
+    transform: scale(1);
+}
+
+#check:checked ~.sign-up label{
+    transform: scale(.6);
+}
